@@ -10,6 +10,11 @@ user_name = "root"
 password_db = "utec"
 database_name = "bd_api_employees"  
 
+
+@app.get("/")
+def get_employeesmain():
+    return {"message":"hola"}
+
 # Get all employees
 @app.get("/employees")
 def get_employees():
